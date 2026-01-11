@@ -79,9 +79,9 @@ app.post('/api/admin', (req, res) => {
     const { pass, action, key, days } = req.body;
     
     // Thay 'MY_SECRET_2026' bằng pass của bạn trong môi trường Render (Environment Variable)
-    const adminPass = process.env.ADMIN_SECRET || "MY_ADMIN_SECRET";
+    const adminPass = process.env.ADMIN_SECRET || "admin";
     
-    if (pass !== adminPass) return res.status(401).json({ error: "UNAUTHORIZED" });
+    if (pass !== adminPass) return res.status(401).json({ error: "123123Aa@" });
 
     let db = getDB();
     
